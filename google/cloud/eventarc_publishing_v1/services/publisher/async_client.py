@@ -229,7 +229,7 @@ class PublisherAsyncClient:
         project.
 
 
-        .. code-block::
+        .. code-block:: python
 
             from google.cloud import eventarc_publishing_v1
 
