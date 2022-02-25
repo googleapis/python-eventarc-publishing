@@ -10,8 +10,8 @@
           "shortName": "PublishChannelConnectionEvents"
         }
       },
-      "file": "eventarcpublishing_generated_eventarc_publishing_v1_publisher_publish_channel_connection_events_async.py",
-      "regionTag": "eventarcpublishing_generated_eventarc_publishing_v1_Publisher_PublishChannelConnectionEvents_async",
+      "file": "eventarcpublishing_v1_generated_publisher_publish_channel_connection_events_async.py",
+      "regionTag": "eventarcpublishing_v1_generated_Publisher_PublishChannelConnectionEvents_async",
       "segments": [
         {
           "end": 43,
@@ -54,8 +54,8 @@
           "shortName": "PublishChannelConnectionEvents"
         }
       },
-      "file": "eventarcpublishing_generated_eventarc_publishing_v1_publisher_publish_channel_connection_events_sync.py",
-      "regionTag": "eventarcpublishing_generated_eventarc_publishing_v1_Publisher_PublishChannelConnectionEvents_sync",
+      "file": "eventarcpublishing_v1_generated_publisher_publish_channel_connection_events_sync.py",
+      "regionTag": "eventarcpublishing_v1_generated_Publisher_PublishChannelConnectionEvents_sync",
       "segments": [
         {
           "end": 43,
