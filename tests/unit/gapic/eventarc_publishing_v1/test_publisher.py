@@ -1177,7 +1177,6 @@ def test_publisher_transport_auth_adc(transport_class):
     [
         transports.PublisherGrpcTransport,
         transports.PublisherGrpcAsyncIOTransport,
-        transports.PublisherRestTransport,
     ],
 )
 def test_publisher_transport_auth_gdch_credentials(transport_class):
