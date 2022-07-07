@@ -3,7 +3,7 @@ Python Client for Eventarc Publishing API
 
 |preview| |pypi| |versions|
 
-`Eventarc Publishing API`_: 
+`Eventarc Publishing API`_: lets you asynchronously deliver events from Google services, SaaS, and your own apps using loosely coupled services that react to state changes.
 
 - `Client Library Documentation`_
 - `Product Documentation`_
