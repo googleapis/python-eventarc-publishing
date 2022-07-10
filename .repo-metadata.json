@@ -1,7 +1,7 @@
 {
     "name": "eventarcpublishing",
     "name_pretty": "Eventarc Publishing",
-    "product_documentation": "https://cloud.google.com",
+    "product_documentation": "https://cloud.google.com/eventarc/docs",
     "client_documentation": "https://cloud.google.com/python/docs/reference/eventarcpublishing/latest",
     "issue_tracker": "",
     "release_level": "preview",
