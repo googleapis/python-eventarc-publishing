@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from typing import MutableMapping, MutableSequence
+
 import proto  # type: ignore
 
 from google.protobuf import any_pb2  # type: ignore
@@ -38,11 +40,11 @@ class PublishChannelConnectionEventsRequest(proto.Message):
             The channel_connection that the events are published from.
             For example:
             ``projects/{partner_project_id}/locations/{location}/channelConnections/{channel_connection_id}``.
-        events (Sequence[google.protobuf.any_pb2.Any]):
+        events (MutableSequence[google.protobuf.any_pb2.Any]):
             The CloudEvents v1.0 events to publish. No other types are
             allowed. If this field is set, then the ``text_events``
             fields must not be set.
-        text_events (Sequence[str]):
+        text_events (MutableSequence[str]):
             The text representation of events to publish. CloudEvent
             v1.0 in JSON format is the only allowed type. Refer to
             https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md
@@ -50,16 +52,16 @@ class PublishChannelConnectionEventsRequest(proto.Message):
             fields must not be set.
     """
 
-    channel_connection = proto.Field(
+    channel_connection: str = proto.Field(
         proto.STRING,
         number=1,
     )
-    events = proto.RepeatedField(
+    events: MutableSequence[any_pb2.Any] = proto.RepeatedField(
         proto.MESSAGE,
         number=2,
         message=any_pb2.Any,
     )
-    text_events = proto.RepeatedField(
+    text_events: MutableSequence[str] = proto.RepeatedField(
         proto.STRING,
         number=3,
     )
@@ -79,11 +81,11 @@ class PublishEventsRequest(proto.Message):
         channel (str):
             The full name of the channel to publish to. For example:
             ``projects/{project}/locations/{location}/channels/{channel-id}``.
-        events (Sequence[google.protobuf.any_pb2.Any]):
+        events (MutableSequence[google.protobuf.any_pb2.Any]):
             The CloudEvents v1.0 events to publish. No other types are
             allowed. If this field is set, then the ``text_events``
             fields must not be set.
-        text_events (Sequence[str]):
+        text_events (MutableSequence[str]):
             The text representation of events to publish. CloudEvent
             v1.0 in JSON format is the only allowed type. Refer to
             https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md
@@ -91,16 +93,16 @@ class PublishEventsRequest(proto.Message):
             fields must not be set.
     """
 
-    channel = proto.Field(
+    channel: str = proto.Field(
         proto.STRING,
         number=1,
     )
-    events = proto.RepeatedField(
+    events: MutableSequence[any_pb2.Any] = proto.RepeatedField(
         proto.MESSAGE,
         number=2,
         message=any_pb2.Any,
     )
-    text_events = proto.RepeatedField(
+    text_events: MutableSequence[str] = proto.RepeatedField(
         proto.STRING,
         number=3,
     )

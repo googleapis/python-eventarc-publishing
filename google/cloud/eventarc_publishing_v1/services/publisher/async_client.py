@@ -16,7 +16,17 @@
 from collections import OrderedDict
 import functools
 import re
-from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
+from typing import (
+    Dict,
+    Mapping,
+    MutableMapping,
+    MutableSequence,
+    Optional,
+    Sequence,
+    Tuple,
+    Type,
+    Union,
+)
 import pkg_resources
 
 from google.api_core.client_options import ClientOptions
@@ -173,9 +183,9 @@ class PublisherAsyncClient:
     def __init__(
         self,
         *,
-        credentials: ga_credentials.Credentials = None,
+        credentials: Optional[ga_credentials.Credentials] = None,
         transport: Union[str, PublisherTransport] = "grpc_asyncio",
-        client_options: ClientOptions = None,
+        client_options: Optional[ClientOptions] = None,
         client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
     ) -> None:
         """Instantiates the publisher client.
@@ -219,10 +229,12 @@ class PublisherAsyncClient:
 
     async def publish_channel_connection_events(
         self,
-        request: Union[publisher.PublishChannelConnectionEventsRequest, dict] = None,
+        request: Optional[
+            Union[publisher.PublishChannelConnectionEventsRequest, dict]
+        ] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> publisher.PublishChannelConnectionEventsResponse:
         r"""Publish events to a ChannelConnection in a partner's
@@ -254,7 +266,7 @@ class PublisherAsyncClient:
                 print(response)
 
         Args:
-            request (Union[google.cloud.eventarc_publishing_v1.types.PublishChannelConnectionEventsRequest, dict]):
+            request (Optional[Union[google.cloud.eventarc_publishing_v1.types.PublishChannelConnectionEventsRequest, dict]]):
                 The request object. The request message for the
                 PublishChannelConnectionEvents method.
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -301,10 +313,10 @@ class PublisherAsyncClient:
 
     async def publish_events(
         self,
-        request: Union[publisher.PublishEventsRequest, dict] = None,
+        request: Optional[Union[publisher.PublishEventsRequest, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> publisher.PublishEventsResponse:
         r"""Publish events to a subscriber's channel.
@@ -335,7 +347,7 @@ class PublisherAsyncClient:
                 print(response)
 
         Args:
-            request (Union[google.cloud.eventarc_publishing_v1.types.PublishEventsRequest, dict]):
+            request (Optional[Union[google.cloud.eventarc_publishing_v1.types.PublishEventsRequest, dict]]):
                 The request object. The request message for the
                 PublishEvents method.
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
